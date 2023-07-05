@@ -1,0 +1,24 @@
+{
+  "name": "drizzle-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "apply": "dotenv -- node -r esbuild-register ./src/db/index.ts",
+    "gen": "dotenv -- drizzle-kit generate:pg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.27.0",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "dotenv-cli": "^7.2.1",
+    "drizzle-kit": "^0.19.3",
+    "typescript": "^5.1.6"
+  }
+}
